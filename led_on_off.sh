@@ -7,7 +7,7 @@
 
 # Login
 curl -s -o /dev/null -c /tmp/cookies.txt 'http://192.168.1.140/logon.cgi' \
---data-raw 'username=admin&password=admin&cpassword=&logon=Login'
+	--data-raw 'username=admin&password=admin&cpassword=&logon=Login'
 cat /tmp/cookies.txt
 # LED Off
 curl -s -o /dev/null -b /tmp/cookies.txt \
